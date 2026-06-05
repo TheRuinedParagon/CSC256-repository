@@ -1,0 +1,77 @@
+/* this is a css commment - this is the only comment style
+CSS syntax:
+
+selector{
+    property: value;
+    property: value;
+}
+
+selector: 3 options: HTML tag/element, ID of an element (#ID), Custom class - starts. (.classname)\
+
+Just use external CSS files in this class
+*/
+/* body will apply to whole page */
+body{
+    background-color: black;
+    color: white;
+}
+
+/* header will just apply to the section with the title */
+header{
+    text-align: center;
+}
+
+/* nav */
+nav{
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+#memeImage{
+    /* This is necessary for your image to be able to be moved around */
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+table{
+            border: 2px solid whitesmoke;
+            /* this will cause multiple overlapping borders to collapse into a single border */
+            border-collapse: collapse;
+        }
+
+        tr{
+            border: 2px solid whitesmoke;
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 5px;
+        }
+        tr:nth-child(odd){
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        tr:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        tr:nth-child(even){
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        tr:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
