@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation slideshow</title>
+
+    <style>
+        body{
+            background-color: black
+        }
+        header{
+            text-align: center;
+            color: white;
+        }
+        main{
+            align-items: center;
+            text-align: center;
+        }
+        #divSlideshow img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        button{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animations I made slideshow</h1>
+    </header>
+    <main>
+        <div id="slideshow">
+            <img id="imgSlide" src="dance.gif" alt="animation">
+        </div>
+        <div>
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </main>
+    <!-- todo: move to external JS file-->
+    <script src="slideshow.js"></script>
+</body>
+</html>
