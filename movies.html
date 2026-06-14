@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List Tracker</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #divMovies{
+            border: 3px solid red;
+            padding: 10px;
+            margin: 28px;
+        }
+        button{
+            background-color: red;
+            color: black;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie List Tracker</h1>
+    </header>
+    <main>
+        <!-- we can also add type="button" to prevent the browser from assuming they're submit buttons-->
+        <form onsubmit="return false;">
+            <div>
+            <label for="txtMovie">Movie Name: </label>
+            <input type="text" id="txtMovie" name="txtMovie" placeholder="ex, Movie Time">
+                </div>
+            <button type="button" onclick="addMovie()">Add Movie</button>
+            <button type="button" onclick="resetMovieList()">Reset List</button>
+
+            <div id="divMovies">
+                ...add a movie...
+            </div>
+        </form>
+    </main>
+    <script src="movies.js"></script>
+</body>
+</html>

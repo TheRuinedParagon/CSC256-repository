@@ -75,3 +75,11 @@ table{
             background-color: whitesmoke;
             color: black;
         }
+        button{
+            background-color: red;
+            color: black;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
