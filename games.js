@@ -1,0 +1,19 @@
+function saveInfo(){
+            // create the shortcut/nicknames for the HTML elements
+            let txtUserName = document.getElementById("txtUserName");
+            let txtSkill = document.getElementById("txtSkill");
+            let numHealth = document.getElementById("numHealth");
+            let numPoints = document.getElementById("numPoints");
+
+            // build a string with the titles and the user's inputs here
+            let output = "User Name: " + txtUserName.value + "\n\n" + "Special Skill: " + txtSkill.value + "\n\n" + "Health: " + numHealth.value + "\n\n" + "Total Points: " + numPoints.value;
+
+            // add the output to the textarea
+            document.getElementById("textaHero").value = output;
+            
+            // clean out the textboxes
+            txtUserName.value = "";
+            txtSkill.value = "";
+            numHealth.value = "";
+            numPoints.value = "";
+        }

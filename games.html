@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero information</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header section for any page title, menu, logo-->
+    <header>
+        <h1>Hero information</h1>
+    </header>
+    <!-- core content of the page can go in a main tag -->
+    <main>
+        <!-- we will get hte inputs for the hero's info -->
+        <form name="frmHero" id="frmHero">
+            <!-- add a div so that the label and inputs are on teh same related line -->
+            <div>
+                <label for="txtUserName">User Name: </label>
+                <input type="text" id="txtUserName" name="txtUserName" placeholder="User Name">
+            </div>
+            <div>
+                <label for="txtSkill">Special skill: </label>
+                <input type="text" id="txtSkill" name="txtSkill" placeholder="Special Skill">
+            </div>
+            <div>
+                <label for="numHealth">Health: </label>
+                <input type="number" id="numHealth" name="numHealth">
+            </div>
+            <div>
+                <label for="numPoints">Points total: </label>
+                <input type="number" id="numPoints" name="numPoints">
+            </div>
+
+            <!-- add the type of button so the form does not try to save-->
+             <button type="button" onclick="saveInfo()">Save hero!</button>
+        </form>
+
+        <div>
+            <h2>Hero Info-</h2>
+            <textarea id="textaHero" readonly rows="5" cols="20"></textarea>
+        </div>
+    </main>
+
+    <!-- for testing add code to this script section. move to external js file later. -->
+     <script src="games.js">
+        
+     </script>
+</body>
+</html>
