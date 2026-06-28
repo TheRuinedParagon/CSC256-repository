@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aedan's Crossword Puzzle</title>
+
+    <!-- TODO: move the CSS to an external file -->
+    <style>
+        table, tr{
+            border: 3px solid navy;
+            border-radius: 8px;
+            /* this will cause multiple borders in the same spot to collapse into a single border */
+            border-collapse: collapse;
+            min-width: 400px;
+        }
+
+        td{
+            padding: 1px;
+            background-color: blue;
+            width: 40px;
+            height: 40px;
+            border: 1px solid navy;
+            border-radius: 4px;
+            /* this will allow us to put numbers in the top corner for the clues */
+            position: relative;
+        }
+
+        input{
+            width: 90%;
+            height: 90%;
+            border: none;
+            text-align: center;
+            /* this should center the textbox within the td */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aedan's Crossword Puzzle</h1>
+    </header>
+    <main>
+        <!-- this is where we will define the table that will hold the crossword puzzle -->
+        <table id="puzzle"></table>
+       
+        <h2>Clues</h2>
+        <h3>Across:</h3>
+        <ol>
+            <li>Client-side scripting language used in this class</li>
+            <li>What coding is to some</li>
+        </ol>
+        <h3>Down:</h3>
+        <ol>
+            <li>First word in CSS</li>
+            <li>Markup language that uses tags to surround text and images</li>
+            <li>Second word in CSS</li>
+        </ol>
+    </main>
+
+    <!-- TODO: move this JavaScript code to an external file -->
+    <script src="crossword.js">
+    </script>
+</body>
+</html>
