@@ -1,0 +1,21 @@
+body{
+            background-color: black
+        }
+        header{
+            text-align: center;
+            color: white;
+        }
+        main{
+            align-items: center;
+            text-align: center;
+        }
+        #divSlideshow img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        button{
+            background-color: white;
+            color: black;
+            border: none;
+        }
